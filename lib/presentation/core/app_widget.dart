@@ -14,7 +14,7 @@ class AppWidget extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: BlocProvider(
         create: (_) => AnimalBloc(AnimalRepository())..add(AnimalEvent.loadAnimals()),
-        child: AnimalPage(),
+        child: const AnimalPage(),
       )
     );
   }

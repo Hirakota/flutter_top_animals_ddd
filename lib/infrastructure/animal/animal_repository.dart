@@ -1,4 +1,3 @@
-import 'package:http/http.dart' as http;
 import 'package:flutter_top_animals_ddd/domain/animal/animal.dart';
 import 'package:flutter_top_animals_ddd/domain/animal/i_animal_repository.dart';
 import 'package:flutter_top_animals_ddd/domain/core/repository.dart';
@@ -8,7 +7,7 @@ class AnimalRepository extends Repository implements IAnimalRepository {
 
   @override
   Future<List<Animal>?> getAllAnimals({String? name}) async {
-    await Future.delayed(Duration(seconds: 2));
+    await Future.delayed(const Duration(seconds: 2));
 
     return [
       const Animal(
